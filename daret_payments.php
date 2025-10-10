@@ -134,9 +134,9 @@ $is_admin = $stmt->fetch(PDO::FETCH_ASSOC)['is_admin'];
                                     <?php if ($round['paid_count'] == $round['total_payers']): ?>
                                         <span class="badge bg-success">Terminé</span>
                                     <?php elseif ($round['paid_count'] > 0 && $round['paid_count'] < $round['total_payers']) : ?>
-                                        <span class="badge bg-info">En cours</span>
+                                        <span class="badge bg-warning">En cours</span>
                                     <?php else: ?>
-                                        <span class="badge bg-warning">À venir</span>
+                                        <span class="badge bg-info">À venir</span>
                                     <?php endif; ?>
                                 </div>
                             </div>
